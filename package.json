@@ -1,0 +1,15 @@
+{
+  "name": "vuepress-vdoing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=102400 ./node_modules/vuepress/cli.js build docs",
+    "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.10",
+    "vuepress-theme-vdoing": "^1.12.9"
+  }
+}
